@@ -1,0 +1,503 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3943789530,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with valid username and password",
+        "description": "",
+        "id": "campusm-home-page;login-with-valid-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 2167779209,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3386911686,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Campusm Home page",
+            "match": {
+              "location": "CampusMSteps.launch_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 851164402,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on student/staff option",
+            "match": {
+              "location": "CampusMSteps.iClickOnStudentStaffOption()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 617556606,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login page Should be displayed",
+            "match": {
+              "location": "CampusMSteps.Iamonloginpage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Homepage"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2859335254,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login page",
+        "description": "",
+        "id": "campusm-home-page;login-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2222452168,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5521156047,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on login page",
+            "match": {
+              "location": "CampusMSteps.iamonloginpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 803329432,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I login with invalid shravanthi or 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shravanthi",
+                  "offset": 21
+                },
+                {
+                  "val": "12345",
+                  "offset": 35
+                }
+              ],
+              "location": "CampusMSteps.iEnterUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 762540123,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should be notified with error message",
+            "match": {
+              "location": "CampusMSteps.showeerrormsg()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@InvalidLogin"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2855197723,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Login",
+        "description": "",
+        "id": "campusm-home-page;login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 150017802,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5269608248,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I am on login page",
+            "match": {
+              "location": "CampusMSteps.iamonloginpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 601342527,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I login with valid joshua.c or campusm",
+            "match": {
+              "arguments": [
+                {
+                  "val": "joshua.c",
+                  "offset": 19
+                },
+                {
+                  "val": "campusm",
+                  "offset": 31
+                }
+              ],
+              "location": "CampusMSteps.validLogin(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 94997845,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should be successfully logged in",
+            "match": {
+              "location": "CampusMSteps.Ishouldbesuccessfullyloggedin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@ValidLogin"
+          }
+        ]
+      }
+    ],
+    "name": "CampusM Home Page",
+    "description": "",
+    "id": "campusm-home-page",
+    "keyword": "Feature",
+    "uri": "CampusLogin.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#noinspection GherkinBrokenTableInspection"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2409148182,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Personal details",
+        "description": "",
+        "id": "enrollment-page;personal-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2175535853,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6433128345,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am logged in successfully with joshua.c and campusm",
+            "match": {
+              "arguments": [
+                {
+                  "val": "joshua.c",
+                  "offset": 33
+                },
+                {
+                  "val": "campusm",
+                  "offset": 46
+                }
+              ],
+              "location": "CampusMSteps.loggedinSuccesfully(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7272440105,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to personal details page",
+            "match": {
+              "location": "EnrollmentStepdef.Navigate_to_personaldetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2622473843,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I update personal details user and Demo and demo.user@myemail.com and Male and 27/12/1990",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user",
+                  "offset": 26
+                },
+                {
+                  "val": "Demo",
+                  "offset": 35
+                },
+                {
+                  "val": "demo.user@myemail.com",
+                  "offset": 44
+                },
+                {
+                  "val": "Male",
+                  "offset": 70
+                },
+                {
+                  "val": "27/12/1990",
+                  "offset": 79
+                }
+              ],
+              "location": "EnrollmentStepdef.updatevalues(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2812321522,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "details should be updated successfully",
+            "match": {
+              "location": "EnrollmentStepdef.val_PersonDetails_Upd_Success()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 484385707,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be able to revert personal details to default values",
+            "match": {
+              "location": "EnrollmentStepdef.revert_PersonalDet_DefaultValues()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@InputValues"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2443485767,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "updated values",
+        "description": "",
+        "id": "enrollment-page;updated-values",
+        "after": [
+          {
+            "result": {
+              "duration": 2198502212,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverFactory.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5744393207,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I am logged in successfully with joshua.c and campusm",
+            "match": {
+              "arguments": [
+                {
+                  "val": "joshua.c",
+                  "offset": 33
+                },
+                {
+                  "val": "campusm",
+                  "offset": 46
+                }
+              ],
+              "location": "CampusMSteps.loggedinSuccesfully(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8386714966,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on logout",
+            "match": {
+              "location": "CampusMSteps.logoutFromApp()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96701113,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should be logged out successfully",
+            "match": {
+              "location": "CampusMSteps.logout_App_Success()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Logout"
+          }
+        ]
+      }
+    ],
+    "name": "Enrollment Page",
+    "description": "",
+    "id": "enrollment-page",
+    "keyword": "Feature",
+    "uri": "Enrollment.feature"
+  }
+]
